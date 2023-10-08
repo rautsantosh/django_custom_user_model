@@ -71,7 +71,7 @@
                                     <form action="{% url 'login' %}" method="post" autocomplete="off"
                                         class="row g-3 needs-validation" novalidate>
                                         {% csrf_token %}
-                                        <div class="col-12">
+                                        <!-- <div class="col-12">
                                             <label for="yourUsername" class="form-label">Username</label>
                                             <div class="input-group has-validation">
                                                 <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -79,6 +79,12 @@
                                                     id="yourUsername" required>
                                                 <div class="invalid-feedback">Please enter your username.</div>
                                             </div>
+                                        </div> -->
+                                        <div class="col-12">
+                                            <label for="email_id" class="form-label">Email ID</label>
+                                            <input type="email" name="email_id" class="form-control" id="email_id"
+                                                required>
+                                            <div class="invalid-feedback">Please enter your email_id!</div>
                                         </div>
 
                                         <div class="col-12">

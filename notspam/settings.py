@@ -85,7 +85,9 @@ DATABASES = {
     }
 }
 
-
+LOGIN_URL = "/login"
+AUTH_USER_MODEL = "authentication.CustomUserModel"
+AUTHENTICATION_BACKENDS = ['authentication.backends.EmailBackendModel']
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
